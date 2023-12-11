@@ -1,0 +1,12 @@
+.model small
+.code
+
+MOV DL, 99H
+MOV BL,34H
+ADD DL,BL
+MOV AL, DL
+DAA
+
+MOV DX,3099H
+MOV BX,1234H
+end

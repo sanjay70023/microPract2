@@ -1,0 +1,26 @@
+.model small
+.data
+	data1 DD 12345678H
+	data2 DD 87654321H
+.code
+.startup
+	MOV AL,87H
+	SUB AL,12H
+	DAS
+	MOV CL ,AL
+	MOV AL,56H
+	SBB AL,43H
+	DAS
+	MOV CH,Al
+	MOV AL,34H
+	SBB AL,65H
+	DAS
+	MOV DL,AL
+	MOV AL,12H
+	SBB AL,87H
+	DAS
+	MOV DH,AL
+
+
+.exit
+end
